@@ -2,8 +2,8 @@ Source: eidete
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake (>= 2.8), libxtst-dev,
-               libgranite-dev, libgtk-3-dev, gstreamer0.10-plugins-bad,
+Build-Depends: debhelper (>= 7.0.50~), cmake (>= 2.8), valac (>= 0.14),
+               libxtst-dev, libgranite-dev, libgtk-3-dev, gstreamer0.10-plugins-bad,
                libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev
 Standards-Version: 3.8.4
 Homepage: https://launchpad.net/eidete
@@ -13,8 +13,8 @@ Vcs-Browser: https://code.launchpad.net/+branch/eidete
 Package: eidete
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Simple screensaver for the elementary project
- Simple screensaver for the elementary project
+Description: Simple screencaster for the elementary project
+ Simple screencaster for the elementary project
  Features:
   - encoding to webm
   - selection of the area to be recorded
@@ -27,8 +27,8 @@ Section: debug
 Priority: extra
 Depends: eidete (= ${binary:Version}), ${misc:Depends}
 Enhances: eidete
-Description: Simple screensaver for the elementary project (debugging symbols)
- Simple screensaver for the elementary project
+Description: Simple screencaster for the elementary project (debugging symbols)
+ Simple screencaster for the elementary project
  Features:
   - encoding to webm
   - selection of the area to be recorded
