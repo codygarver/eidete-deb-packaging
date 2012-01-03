@@ -13,7 +13,7 @@ Vcs-Browser: https://code.launchpad.net/+branch/eidete
 
 Package: eidete
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, gstreamer0.10-plugins-bad, contractor
 Description: Simple screencaster for the elementary project
  Simple screencaster for the elementary project
  Features:
