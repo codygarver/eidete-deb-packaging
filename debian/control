@@ -2,10 +2,16 @@ Source: eidete
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake (>= 2.8), valac-0.16,
-               libxtst-dev, libgranite-dev, libgtk-3-dev, libwnck-3-dev,
-               gstreamer0.10-plugins-bad, libgstreamer0.10-dev,
-               libgstreamer-plugins-base0.10-dev
+Build-Depends: cmake (>= 2.8),
+               debhelper (>= 7.0.50~),
+               gstreamer0.10-plugins-bad,
+               libgranite-dev,
+               libgstreamer-plugins-base0.10-dev,
+               libgstreamer0.10-dev,
+               libgtk-3-dev,
+               libwnck-3-dev,
+               libxtst-dev,
+               valac-0.16
 Standards-Version: 3.8.4
 Homepage: https://launchpad.net/eidete
 Vcs-Bzr: lp:eidete
@@ -13,7 +19,7 @@ Vcs-Browser: https://code.launchpad.net/+branch/eidete
 
 Package: eidete
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, gstreamer0.10-plugins-bad
+Depends: gstreamer0.10-plugins-bad, ${misc:Depends}, ${shlibs:Depends}
 Recommends: contractor
 Description: Simple screencaster for the elementary project
  Simple screencaster for the elementary project
