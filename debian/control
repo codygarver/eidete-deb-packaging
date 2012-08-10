@@ -23,6 +23,7 @@ Depends: gstreamer0.10-plugins-bad, ${misc:Depends}, ${shlibs:Depends}
 Recommends: contractor
 Description: Simple screencaster for the elementary project
  Simple screencaster for the elementary project
+ .
  Features:
   - encoding to webm
   - selection of the area to be recorded
@@ -37,6 +38,7 @@ Depends: eidete (= ${binary:Version}), ${misc:Depends}
 Enhances: eidete
 Description: Simple screencaster for the elementary project (debugging symbols)
  Simple screencaster for the elementary project
+ .
  Features:
   - encoding to webm
   - selection of the area to be recorded
