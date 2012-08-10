@@ -16,4 +16,7 @@ override_dh_strip:
 	dh_strip --dbg-package=eidete-dbg
 
 override_dh_auto_install:
-	dh_auto_install --destdir=debian/eidete
+	dh_auto_install --destdir=debian/eidete	
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz

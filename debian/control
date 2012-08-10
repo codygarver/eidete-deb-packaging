@@ -20,6 +20,7 @@ Vcs-Browser: https://code.launchpad.net/+branch/eidete
 Package: eidete
 Architecture: any
 Depends: gstreamer0.10-plugins-bad, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
 Recommends: contractor
 Description: Simple screencaster for the elementary project
  Simple screencaster for the elementary project
@@ -35,6 +36,7 @@ Architecture: any
 Section: debug
 Priority: extra
 Depends: eidete (= ${binary:Version}), ${misc:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
 Enhances: eidete
 Description: Simple screencaster for the elementary project (debugging symbols)
  Simple screencaster for the elementary project
