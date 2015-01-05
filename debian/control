@@ -4,15 +4,15 @@ Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 7.0.50~),
-               gstreamer0.10-plugins-bad,
+               libgstreamer-plugins-bad1.0-dev,
                libgranite-dev,
-               libgstreamer-plugins-base0.10-dev,
-               libgstreamer0.10-dev,
+               libgstreamer-plugins-base1.0-dev,
+               libgstreamer1.0-dev,
                libgtk-3-dev,
                libwnck-3-dev,
                libxtst-dev,
-               valac (>= 0.16)
-Standards-Version: 3.8.4
+               valac
+Standards-Version: 3.9.6
 Homepage: https://launchpad.net/eidete
 Vcs-Bzr: lp:eidete
 Vcs-Browser: https://code.launchpad.net/+branch/eidete
