@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 7.0.50~),
-               libgstreamer-plugins-bad1.0-dev,
+               gstreamer1.0-plugins-bad,
                libgranite-dev,
                libgstreamer-plugins-base1.0-dev,
                libgstreamer1.0-dev,
@@ -19,7 +19,7 @@ Vcs-Browser: https://code.launchpad.net/+branch/eidete
 
 Package: eidete
 Architecture: any
-Depends: gstreamer0.10-plugins-bad, ${misc:Depends}, ${shlibs:Depends}
+Depends: gstreamer1.0-plugins-bad, ${misc:Depends}, ${shlibs:Depends}
 Pre-Depends: dpkg (>= 1.15.6)
 Recommends: contractor
 Description: Simple screencaster for the elementary project
